@@ -1,0 +1,184 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Orelega One;
+    src: url(/font/OrelegaOne-Regular.ttf);
+}
+@font-face {
+    font-family: Days One;
+    src: url(/font/Days_One/DaysOne-Regular.ttf);
+}
+ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background: linear-gradient(
+-125deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+    height: 100vh;
+    background-size: 400% 100%;
+    animation: gradient 11s ease infinite;
+    overflow-x:hidden; 
+}
+
+
+.header{
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    z-index: 6;
+}
+.conteiner{
+    margin: 0% auto;
+    width: 1500px;
+}
+.header-logo img{
+    width: 100px;
+}
+.header-logo{
+    position: absolute;
+    top: 20px;
+}
+.header-climn{
+    position: absolute;
+    width: 1500px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-shapka{
+    position: relative;
+    z-index: 5;
+    width: 1455px;
+    height: 100px;
+    background-color: rgb(0 0 0 / 23%);
+    border-radius: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.header-shapka>ul{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    width: 1335px;
+    z-index: 1;
+}
+.header-shapka li{
+    text-align: center;
+    width: 200px;
+    list-style: none;
+    position: relative;
+}
+.header-shapka>ul>li>a{
+    color: white;
+    font-weight: 800;
+}
+.header-shapka a{
+    display: block;
+    height: 100px;
+    line-height: 20px;
+    transition: all .5s;
+    padding-top: 40px;
+        
+}
+.header-logo a{
+    padding-top: 0%;
+}
+.header-shapka a:hover:not(.header-logo>a){
+    background: rgba(255, 255, 255, 0.486);
+}
+.header-shapka>ul>li:last-child a{
+    border-radius: 10px;
+}
+.navy li{
+    width: 300px;
+}
+.header-shapka ul li ul{
+    display: none;
+    position: absolute;
+    
+}
+.header-shapka ul li ul li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+   
+}
+.header-shapka ul li ul li:hover {
+    background-color: crimson;
+    transform: scale(7deg);
+    color: deepskyblue;
+}
+.header-shapka li:hover ul{
+    display: block;
+    background-color: rgba(246, 250, 249, 0.582);
+}
+
+.section-header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+.section-header-title{
+    font-size: 30px;
+    
+    font-family: 'Days One', sans-serif;
+    position: relative;
+    font-size: 35px;
+    text-align: start;
+    top: -2px;
+    left: 32px;
+}
+.section-header-cont{
+    display: grid;
+    width: 1500px;;
+    height: 829px;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+.section-header-img{
+    position: relative;
+    top: 125px;
+    left: 57px;
+}
+.section-header-img img{
+    width: 850px;
+}
+.text-flicker-in-glow {
+	-webkit-animation: text-flicker-in-glow 2s linear both;
+	        animation: text-flicker-in-glow 1s linear both;
+}
+
+.section-1{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #6c6c6c;
+}
+.section-1-title{
+    float: right;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    color: white;
+}
+.section-1-title p{
+    text-align: justify;
+}
+ 
